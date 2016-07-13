@@ -116,40 +116,40 @@
 				<code>	&lt;h2&gt;Section №3&lt;/h2&gt;</code>
 				<code>&lt;/section&gt;</code>
 			</span>
-			<code class="next">&lt;a <mark>name="section-3</mark>"&gt;&lt;/a&gt; <span class="comment next">&lt;!-- Don't do it --&gt;</span></code>
 		</pre>
 	</section>
 
 	<section class="slide" id="13">
-		<h2>Логическая ссылка</h2>
+		<h2>Placeholder hyperlink</h2>
 		<pre>			<code>&lt;ul&gt;</code>
-			<code>	&lt;li&gt;&lt;a href="/"&gt;Главная&lt;/a&gt;&lt;/li&gt;</code>
-			<code>	&lt;li&gt;<mark>&lt;a&gt;</mark>Каталог<mark>&lt;/a&gt;</mark>&lt;/li&gt;</code>
-			<code>	&lt;li&gt;&lt;a href="/about/"&gt;О&nbsp;компании&lt;/a&gt;&lt;/li&gt;</code>
+			<code>	&lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
+			<code>	&lt;li&gt;&lt;a href="/news"&gt;News&lt;/a&gt;&lt;/li&gt;</code>
+			<code>	&lt;li&gt;<mark>&lt;a&gt;</mark>Examples<mark>&lt;/a&gt;</mark>&lt;/li&gt;</code>
+			<code>	&lt;li&gt;&lt;a href="/legal"&gt;Legal&lt;/a&gt;&lt;/li&gt;</code>
 			<code>&lt;/ul&gt;</code>
 		</pre>
-		<p>Чисто логическая ссылка, <strong>без адреса</strong>.</p>
+				<p>Forget about those span element replacements used to style links targeting the current page. Remove the href attribute from the link instead.</p>
 	</section>
 
 	<section class="slide" id="14">
-		<h2>Состояния ссылок</h2>
+		<h2>The four links states are:</h2>
 		<pre>			<code><mark>a:hover</mark> { color: blue }</code>
 			<code><mark>a:focus</mark> { outline: 1px solid blue }</code>
 			<code><mark>a:active</mark> { color: red }</code>
 			<code><mark>a:visited</mark> { color: violet }</code>
 		</pre>
-		<p>Полагаться только на <code>:hover</code> уже давно нельзя.</p>
+		<p>We shouldn't use only <code>:hover</code>.</p>
 	</section>
 
 	<section class="slide" id="button">
 		<h2 class="shout">
-			<button class="button">Кнопка</button>
+			<button class="button">Button</button>
 		</h2>
 	</section>
 
 	<section class="slide" id="button-focus">
 		<h2 class="shout">
-			<button class="button">Кнопка</button>
+			<button class="button">Button</button>
 		</h2>
 		<style>
 			#button-focus button {
@@ -162,7 +162,7 @@
 
 	<section class="slide" id="button-active">
 		<h2 class="shout">
-			<button class="button">Кнопка</button>
+			<button class="button">Button</button>
 		</h2>
 		<style>
 			#button-active button {
@@ -176,8 +176,8 @@
 	<section class="slide" id="18">
 		<h2>Кнопки 90-х</h2>
 		<pre>			<code>&lt;form&gt;</code>
-			<code>	<mark>&lt;input</mark> type="<mark>submit</mark>" value="Кнопка"&gt;</code>
-			<code>	<mark>&lt;input</mark> type="<mark>button</mark>" value="Кнопка"&gt;</code>
+			<code>	<mark>&lt;input</mark> type="<mark>submit</mark>" value="Button"&gt;</code>
+			<code>	<mark>&lt;input</mark> type="<mark>button</mark>" value="Button"&gt;</code>
 			<code>	<mark>&lt;input</mark> type="<mark>image</mark>" src="button.png"&gt;</code>
 			<code>&lt;/form&gt;</code>
 		</pre>
@@ -188,13 +188,23 @@
 		<img class="cover w" src="./index_files/img/backstreet.jpg" alt="Backstreet Boys">
 	</section>
 
-	<section class="slide" id="20">
+	<section class="slide" id="blockquote-btn">
+	<style>
+	#blockquote-btn blockquote {
+		width: 700px;
+		}
+		#blockquote-btn blockquote:before {
+		    	margin: -0.15em 0 0 -.50em;
+			}
+	</style>
+
 		<blockquote class="place m quote">
 			<p>
-				The <b>button</b> element<br>
-				represents <b>a&nbsp;button</b>.<br>
+				The <b>button</b> element
+				represents <b>a&nbsp;button</b>.
 				The element is <b>a&nbsp;button</b>.
 			</p>
+			<strong>W3C Working Group Note</strong>
 		</blockquote>
 	</section>
 
