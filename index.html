@@ -122,14 +122,14 @@
 
 	<section class="slide" id="13">
 		<h2>Placeholder hyperlink</h2>
-		<pre>			<code>&lt;ul&gt;</code>
+		<pre class="next">			<code>&lt;ul&gt;</code>
 			<code>	&lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
 			<code>	&lt;li&gt;&lt;a href="/news"&gt;News&lt;/a&gt;&lt;/li&gt;</code>
 			<code>	&lt;li&gt;<mark>&lt;a&gt;</mark>Examples<mark>&lt;/a&gt;</mark>&lt;/li&gt;</code>
 			<code>	&lt;li&gt;&lt;a href="/legal"&gt;Legal&lt;/a&gt;&lt;/li&gt;</code>
 			<code>&lt;/ul&gt;</code>
 		</pre>
-				<p>Forget about those span element replacements used to style links targeting the current page. Remove the href attribute from the link instead.</p>
+				<p class="next">Forget about those span element replacements used to style links targeting the current page. Remove the href attribute from the link instead.</p>
 	</section>
 
 	<section class="slide" id="14">
@@ -255,6 +255,24 @@
 		<img class="cover width" src="./index_files/img/cry.gif" alt="">
 	</section>
 
+	<section class="slide" id="semantic">
+	<style>
+		#semantic p {
+		font-size: 20px;
+			}
+	</style>
+		<h2>Semantic meaning</h2>
+		<p>All elements in HTML (except for <mark>div</mark>  and <mark>span</mark> ) have a semantic meaning. This semantic meaning is interpreted by browsers, screen readers, and SEO crawlers.</p>
+		<p> Browsers use this semantic value to properly display the elements and to bind interactions. </p>
+		<p>Screen readers also use this semantic value to bind additional different keyboard shortcuts and interactions. </p>
+			<p>Lastly, SEO crawlers use this meaning to measure importance of content and define relationships.</p>
+	</section>
+
+	<section class="slide" id="033">
+		<h2>Worst Practice</h2>
+		<p>Don’t use a <mark>div</mark>, <mark>span</mark>, or some other non-interactive element. If you cannot tab to it with a keyboard, it’s probably a terrible idea to use. Adding role="button" doesn’t help, <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank"> that makes it worse</a>.</p>
+	</section>
+
 	<section class="slide" id="css">
 		<style>
 		#css a, #css button, #css input{
@@ -365,23 +383,6 @@
 		<img class="cover" src="./index_files/img/tab.png"  alt="">
 	</section>
 
-	<section class="slide" id="semantic">
-	<style>
-		#semantic p {
-		font-size: 16px;
-			}
-	</style>
-		<h2>Semantic meaning</h2>
-		<p>All elements in HTML (except for <mark>div</mark>  and <mark>span</mark> ) have a semantic meaning. This semantic meaning is interpreted by browsers, screen readers, and SEO crawlers.</p>
-		<p> Browsers use this semantic value to properly display the elements and to bind interactions. </p>
-		<p>Screen readers also use this semantic value to bind additional different keyboard shortcuts and interactions. </p>
-			<p>Lastly, SEO crawlers use this meaning to measure importance of content and define relationships.</p>
-	</section>
-
-	<section class="slide" id="033">
-		<h2>Worst Practice</h2>
-		<p>Don’t use a <mark>div</mark>, <mark>span</mark>, or some other non-interactive element. If you cannot tab to it with a keyboard, it’s probably a terrible idea to use. Adding role="button" doesn’t help, <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank"> that makes it worse</a>.</p>
-	</section>
 
 	<section class="slide" id="buttons">
 		<h2 class="shrink">Buttons</h2>
@@ -389,25 +390,25 @@
 			<li>
 				Receive keyboard focus by default
 			</li>
-			<li class="next">
+			<li>
 				“Click” with the Space key
 			</li>
-			<li class="next">
+			<li>
 				Submit form data to a server / Reset a form
 			</li>
-			<li class="next">
+			<li>
 				Instruct a screen reader with the implicit button role
 			</li>
-			<li class="next">
+			<li>
 				Opening a modal window
 			</li>
-			<li class="next">
+			<li>
 				Playing media content
 			</li>
-			<li class="next">
+			<li>
 				Triggering a popup menu
 			</li>
-			<li class="next">
+			<li>
 				Toggling an interface
 			</li>
 		</ul>
@@ -419,19 +420,19 @@
 			<li>
 				Create hypertext, a network of online resources
 			</li>
-			<li class="next">
+			<li>
 				Navigate the user to a new page or view
 			</li>
-			<li class="next">
+			<li>
 				Change the URL
 			</li>
-			<li class="next">
+			<li>
 				Cause a browser redraw/refresh
 			</li>
-			<li class="next">
+			<li>
 				Support page jumps with internal href attributes
 			</li>
-			<li class="next">
+			<li>
 			Allow opening in new windows (and back in the day, framesets)
 			</li>
 		</ul>
