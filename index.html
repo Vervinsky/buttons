@@ -29,12 +29,12 @@
 <body class="shower list" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
 
 	<header class="caption">
-		<h1>Buttons vs Anchors!</h1>
+		<h1>Buttons vs Links!</h1>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
 	</header>
 
 	<section class="slide white" id="cover">
-		<h2 class="shout">Click here!</h2>
+		<h2 class="shout">Buttons <br/>vs <br/>Links!</h2>
 		<figure>
 			<img class="cover width" src="./index_files/img/cover.jpg" alt="">
 		</figure>
@@ -51,7 +51,7 @@
 	</section>
 
 	<section class="slide" id="3">
-		<h2 class="shout"><a>Anchors</a></h2>
+		<h2 class="shout"><a>Links</a></h2>
 	</section>
 
 	<section class="slide" id="4">
@@ -63,10 +63,10 @@
 	</section>
 
 	<section class="slide" id="link">
-		<h2 class="shout"><a>Anchor</a></h2>
+		<h2 class="shout"><a>Link</a></h2>
 	</section>
 	<section class="slide" id="link-focus">
-		<h2 class="shout"><a>Anchor</a></h2>
+		<h2 class="shout"><a>Link</a></h2>
 		<style>
 			#link-focus a {
 				border-radius: 0.1em;
@@ -77,7 +77,7 @@
 		</style>
 	</section>
 	<section class="slide" id="link-active">
-		<h2 class="shout"><a>Anchor</a></h2>
+		<h2 class="shout"><a>Link</a></h2>
 		<style>
 			#link-active a {
 				color: #c00;
@@ -85,7 +85,7 @@
 		</style>
 	</section>
 	<section class="slide" id="link-visited">
-		<h2 class="shout"><a>Anchor</a></h2>
+		<h2 class="shout"><a>Link</a></h2>
 		<style>
 			#link-visited a {
 				color: #7957bc;
@@ -211,12 +211,6 @@
 		</pre>
 	</section>
 
-
-	<section class="slide" id="30">
-		<h2>What usually the designers want?</h2>
-		<img class="next" src="./index_files/img/click_here.gif" alt="">
-	</section>
-
 	<section class="slide" id="27">
 		<a href="https://pwa.rocks/" target="_blank">
 			<img class="cover" src="./index_files/img/pwa.png" alt="Навигация на PWA.rocks">
@@ -235,6 +229,12 @@
 		</pre>
 	</section>
 
+
+	<section class="slide" id="30">
+		<h2>What usually the designers want?</h2>
+		<img class="next" src="./index_files/img/click_here.gif" alt="">
+	</section>
+
 	<section class="slide" id="32">
 		<h2>Crazy links</h2>
 		<pre>			<code class="next">&lt;a onclick="<mark>fire()</mark>"&gt;Bang!&lt;/a&gt;</code>
@@ -243,21 +243,6 @@
 			<code class="next">&lt;a href="<mark>javascript:void(0)</mark>" onclick="<mark>fire()</mark>"&gt;Bang!&lt;/a&gt;</code>
 		</pre>
 	</section>
-
-	<!-- <section class="slide" id="32">
-		<h2>Which one should you use?</h2>
-		<pre>
-			<code>&lt;a href="#" onclick="doSomething()"&gt;Do Something&lt;/a&gt;</code>
-			<code>&lt;a href="javascript:void(0);" onclick="doSomething()"&gt;Do it&lt;/a&gt;</code>
-			<code>&lt;a href="javascript:doSomething()"&gt;Do Something&lt;/a&gt;</code>
-			<code>&lt;a href="" ng-click="app.doSomething()"&gt;Do Something&lt;/a&gt;</code>
-		</pre>
-		<p class="next"><strong>Answer:</strong> None of those!</p>
-	</section> -->
-
-
-
-
 
 	<section class="slide" id="33">
 		<h2 class="shout">But is not a link!</h2>
@@ -310,7 +295,7 @@
 		<div class="slide__wrap">
 			<h2>CSS is awesome</h2>
 			<img src="./index_files/img/cssisawesome.jpg" alt="" class="active css-img">
-			<a class="next">Anchor</a>
+			<a class="next">Link</a>
 			<button class="next">Button</button>
 			<input class="next" type="submit" value="Input">
 		</div>
@@ -335,6 +320,7 @@
 			<code>	class="gb_b gb_Rb" title="<mark>Google apps</mark>"</code>
 			<code>	<mark>aria</mark>-expanded="true" tabindex="0"</code>
 			<code>	data-ved="0EL0nCBI"&gt;</code>
+			<code class="mark next"> </code>
 			<code><mark>&lt;/a&gt;</mark></code>
 		</pre>
 	</section>
@@ -349,6 +335,10 @@
 			<code>	&lt;/a&gt;</code>
 			<code><mark>&lt;/table&gt;</mark></code>
 		</pre>
+	</section>
+
+	<section class="slide white" id="send">
+		<img class="cover" src="./index_files/img/all-send.png" alt="">
 	</section>
 
 	<section class="slide white" id="oh">
@@ -469,8 +459,30 @@
 		</style>
 	</section>
 
-	<section class="slide" id="57">
-		<h2 class="shout">Вопросы?</h2>
+	<section class="slide">
+		<h2>Sources</h2>
+		<ol>
+			<li>
+				<a href="https://bitsofco.de/anchors-vs-buttons/">
+					Anchors vs Buttons
+				</a>
+			</li>
+			<li>
+				<a href="http://adrianroselli.com/2016/01/links-buttons-submits-and-divs-oh-hell.html">
+					Links, Buttons, Submits, and Divs, Oh Hell
+				</a>
+			</li>
+			<li>
+				<a href="http://www.jamesturneronline.net/blog/anchors-buttons-and-inputs.html">
+					Anchors, buttons and inputs
+				</a>
+			</li>
+			<li>
+				<a href="https://marcysutton.com/links-vs-buttons-in-modern-web-applications/">
+					Links vs. Buttons in Modern Web Applications
+				</a>
+			</li>
+		</ol>
 	</section>
 
 	<footer class="badge">
